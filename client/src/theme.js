@@ -16,29 +16,32 @@ export const tokensDark = {
     1000: "#000000", // manually adjusted
   },
   primary: {
-    // blue
-    100: "#d3d4de",
-    200: "#a6a9be",
-    300: "#7a7f9d",
-    400: "#4d547d",
-    500: "#21295c",
-    600: "#191F45", // manually adjusted
-    700: "#141937",
-    800: "#0d1025",
-    900: "#070812",
+    DEFAULT: '#490F5C',
+    50: '#B942E0',
+    100: '#B331DD',
+    200: '#9D20C5',
+    300: '#811AA2',
+    400: '#65157F',
+    500: '#490F5C',
+    600: '#23072C',
+    700: '#000000',
+    800: '#000000',
+    900: '#000000',
+    950: '#000000'
   },
   secondary: {
-    // yellow
-    50: "#f0f0f0", // manually adjusted
-    100: "#fff6e0",
-    200: "#ffedc2",
-    300: "#ffe3a3",
-    400: "#ffda85",
-    500: "#ffd166",
-    600: "#cca752",
-    700: "#997d3d",
-    800: "#665429",
-    900: "#332a14",
+    DEFAULT: '#FFDDBD',
+    50: '#FFF5EB',
+    100: '#FFEDDC',
+    200: '#FFDDBD',
+    300: '#FFC38A',
+    400: '#FFA857',
+    500: '#FF8E24',
+    600: '#F07400',
+    700: '#BD5C00',
+    800: '#8A4300',
+    900: '#572A00',
+    950: '#3E1E00'
   },
 };
 
@@ -78,7 +81,7 @@ export const themeSettings = (mode) => {
             },
             neutral: {
               ...tokensDark.grey,
-              main: tokensDark.grey[500],
+              main: tokensDark.grey[300],
             },
             background: {
               default: tokensDark.primary[600],
@@ -99,7 +102,7 @@ export const themeSettings = (mode) => {
             },
             neutral: {
               ...tokensLight.grey,
-              main: tokensDark.grey[500],
+              main: tokensDark.grey[300],
             },
             background: {
               default: tokensDark.grey[0],
